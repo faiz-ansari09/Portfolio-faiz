@@ -81,16 +81,16 @@ Portfolio-faiz/
 ## 🔧 Installation & Setup
 
 ```bash
- **Clone the repository**
+ Clone the repository:
   git clone https://github.com/faiz-ansari09/Portfolio-faiz
 
- **Navigate to project folder**
+ Navigate to project folder:
   cd Portfolio-faiz
 
- **Install dependencies:**
+ Install dependencies:
   npm install
 
- **Start development server:**
+ Start development server:
   npm run dev
 ```
 

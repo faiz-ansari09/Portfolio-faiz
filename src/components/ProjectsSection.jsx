@@ -8,7 +8,7 @@ const projects = [
       "DailyScope is a modern news aggregator web app. It fetches and displays the latest headlines and news articles using the NewsAPI.",
     image: "/projects/project1.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
-    demoUrl: "#",
+    demoUrl: "https://github.com/faiz-ansari09/DailyScope",
     repoUrl: "https://github.com/faiz-ansari09/DailyScope",
   },
   {
@@ -62,7 +62,7 @@ const projects = [
       "A web-based Hospital Management System designed to streamline hospital operations such as patient registration, doctor management, and appointment scheduling.",
     image: "/projects/project5.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
-    demoUrl: "#",
+    demoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
     repoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
   },
   {
@@ -102,7 +102,7 @@ const projects = [
       "A clean, modern, and fully responsive personal portfolio built to showcase my skills and projects. Developed with a focus on performance and a sleek user interface using the latest front-end technologies.",
     image: "/projects/project9.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
-    demoUrl: "#",
+    demoUrl: "https://portfolio-faiz-ans.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/Portfolio-faiz",
   },
 ];

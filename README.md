@@ -1,10 +1,4 @@
-## 🚀 Introduction
-
-A modern personal portfolio website built using **React**, **Vite**, and **TailwindCSS**. This project showcases your skills, experience, and projects in a clean, responsive, and visually appealing manner.
-
----
-
-## Build a Modern Portfolio Website with React & TailwindCSS
+# Portfolio Website with React + Vite & TailwindCSS ✨
 
 <div align="center">
   <br />
@@ -19,13 +13,19 @@ A modern personal portfolio website built using **React**, **Vite**, and **Tailw
 
 ---
 
+## 🚀 Introduction
+
+A modern personal portfolio website built using **React**, **Vite**, and **TailwindCSS**. This project showcases your skills, experience, and projects in a clean, responsive, and visually appealing manner.
+
+---
+
 ## 📋 Table of Contents
 
 1. [Introduction](#-introduction)
 2. [Table of Contents](#-table-of-contents)
 3. [Features](#-features)
-4. [Project Structure](#-project-structure)
-5. [Tech Stack](#-tech-stack)
+4. [Tech Stack](#-tech-stack)
+5. [Project Structure](#-project-structure)
 6. [Installation & Setup](#-installation-&-setup)
 
 ---
@@ -37,6 +37,17 @@ A modern personal portfolio website built using **React**, **Vite**, and **Tailw
 - 📱 Responsive design.
 - 🧩 Modular React components.
 - 🗂️ Easy to customize.
+
+---
+
+## 🛠 Tech Stack
+
+- [React](https://react.dev/) – Component-based UI development.
+- [Vite](https://vitejs.dev/) – Lightning-fast build tool.
+- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS for styling.
+- [Lucide Icons](https://lucide.dev/) – Clean and beautiful icon pack.
+- [Radix UI](https://www.radix-ui.com/) – Accessible component primitives.
+- [Vercel](https://vercel.com/) – Deployment
 
 ---
 
@@ -67,35 +78,21 @@ Portfolio-faiz/
 
 ---
 
-## 🛠 Tech Stack
-
-- [React](https://react.dev/) – Component-based UI development.
-- [Vite](https://vitejs.dev/) – Lightning-fast build tool.
-- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS for styling.
-- [Lucide Icons](https://lucide.dev/) – Clean and beautiful icon pack.
-- [Radix UI](https://www.radix-ui.com/) – Accessible component primitives.
-- [Vercel](https://vercel.com/) – Deployment
-
----
-
 ## 🔧 Installation & Setup
 
+```bash
  **Clone the repository**
-  ```bash
   git clone https://github.com/faiz-ansari09/Portfolio-faiz
-  ```
+
  **Navigate to project folder**
-  ```bash
   cd Portfolio-faiz
-  ```
+
  **Install dependencies:**
-  ```bash
   npm install
-  ```
+
  **Start development server:**
-  ```bash
   npm run dev
-  ```
+```
 
 ---
 

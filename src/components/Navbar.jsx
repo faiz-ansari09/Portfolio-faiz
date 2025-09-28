@@ -13,29 +13,27 @@ const navItems = [
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
 
-  // Add scroll effect for background blur
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
+
+      // Close mobile menu on scroll
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Lock body scroll when mobile menu is open
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    // Cleanup if component unmounts
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, [isMenuOpen]);
+
+  const handleMobileNavClick = (name) => {
+    setActiveItem(name);
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav
@@ -57,9 +55,9 @@ export const Navbar = () => {
 
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
+          {navItems.map((item) => (
             <a
-              key={key}
+              key={item.name}
               href={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
@@ -68,7 +66,7 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* mobile nav */}
+        {/* mobile menu button */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
@@ -76,29 +74,44 @@ export const Navbar = () => {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+      </div>
 
-        <div
-          className={cn(
-            "fixed top-0 inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <div className="flex flex-col space-y-10">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className="text-xl font-semibold text-foreground/80 hover:text-primary transition-colors duration-300 block px-4 py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </div>
+      {/* overlay */}
+      <div
+        onClick={() => setIsMenuOpen(false)}
+        className={cn(
+          "fixed inset-0 bg-black/40 backdrop-blur-sm z-30 transition-opacity duration-300 md:hidden",
+          isMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        )}
+      />
+
+      {/* mobile menu sliding from right */}
+      <div
+        className={cn(
+          "fixed top-0 right-0 h-full w-64 bg-background/95 backdrop-blur-md z-40 flex flex-col items-start px-6 pt-20",
+          "transition-transform duration-300 md:hidden",
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        )}
+      >
+        <nav className="flex flex-col space-y-8 w-full">
+          {navItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={() => handleMobileNavClick(item.name)}
+              className={cn(
+                "text-lg font-semibold transition-colors duration-300 block px-4 py-2 rounded",
+                activeItem === item.name
+                  ? "text-primary"
+                  : "text-foreground/80 hover:text-primary"
+              )}
+            >
+              {item.name}
+            </a>
+          ))}
+        </nav>
       </div>
     </nav>
   );

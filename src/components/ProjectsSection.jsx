@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 const projects = [
   {
@@ -8,7 +8,7 @@ const projects = [
       "DailyScope is a modern news aggregator web app. It fetches and displays the latest headlines and news articles using the NewsAPI.",
     image: "/projects/project1.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
-    demoUrl: "https://github.com/faiz-ansari09/DailyScope",
+    // demoUrl: "https://github.com/faiz-ansari09/DailyScope",
     repoUrl: "https://github.com/faiz-ansari09/DailyScope",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
       "ExpressJS",
       "MongoDB",
     ],
-    demoUrl: "https://logi-tracker-ihzh.vercel.app",
+    // demoUrl: "https://logi-tracker-ihzh.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/logiTracker",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
       "ExpressJS",
       "MongoDB",
     ],
-    demoUrl: "https://my-note-sync-faiz.vercel.app",
+    // demoUrl: "https://my-note-sync-faiz.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/myNoteSync",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
       "SumItUp is a simple, fast, and responsive React web application for analyzing and manipulating text.",
     image: "/projects/project4.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
-    demoUrl: "https://sum-it-up-faiz.vercel.app",
+    // demoUrl: "https://sum-it-up-faiz.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/SumItUp",
   },
   {
@@ -62,7 +62,7 @@ const projects = [
       "A web-based Hospital Management System designed to streamline hospital operations such as patient registration, doctor management, and appointment scheduling.",
     image: "/projects/project5.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
-    demoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
+    // demoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
     repoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
   },
   {
@@ -72,7 +72,7 @@ const projects = [
       "This is a web application for the detection of SMS messages created using Streamlit which helps you determine if an SMS is spam or not using a machine learning model.",
     image: "/projects/project6.png",
     tags: ["Python", "Streamlit", "scikit-learn", "NumPy", "SciPy"],
-    demoUrl: "https://sms-spam-detection-faiz.streamlit.app",
+    // demoUrl: "https://sms-spam-detection-faiz.streamlit.app",
     repoUrl: "https://github.com/faiz-ansari09/SMS-Spam-Detection",
   },
   {
@@ -82,7 +82,7 @@ const projects = [
       "This is a web-based temperature converter application that allows users to convert temperatures between Celsius and Fahrenheit.",
     image: "/projects/project7.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "https://faiz-ansari09.github.io/Temperature_Converter",
+    // demoUrl: "https://faiz-ansari09.github.io/Temperature_Converter",
     repoUrl: "https://github.com/faiz-ansari09/Temperature_Converter",
   },
   {
@@ -92,17 +92,17 @@ const projects = [
       "The project demonstrates a scalable architecture for online stores, featuring product listings, shopping cart functionality, and a responsive user interface.",
     image: "/projects/project8.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
-    demoUrl: "https://e-comm-faiz.vercel.app",
+    // demoUrl: "https://e-comm-faiz.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/E-Comm",
   },
   {
     id: "9",
-    title: "Portfolio",
+    title: "Portfolio Website",
     description:
       "A clean, modern, and fully responsive personal portfolio built to showcase my skills and projects. Developed with a focus on performance and a sleek user interface using the latest front-end technologies.",
     image: "/projects/project9.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
-    demoUrl: "https://portfolio-faiz-ans.vercel.app",
+    // demoUrl: "https://portfolio-faiz-ans.vercel.app",
     repoUrl: "https://github.com/faiz-ansari09/Portfolio-faiz",
   },
 ];
@@ -149,13 +149,13 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
+                    {/* <a
                       href={project.demoUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
-                    </a>
+                    </a> */}
                     <a
                       href={project.repoUrl}
                       target="_blank"

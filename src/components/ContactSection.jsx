@@ -146,18 +146,18 @@ export const ContactSection = () => {
                   <GrLinkedin size={25} />
                 </a>
                 <a
-                  href="https://x.com/faiz_ans09"
-                  target="_blank"
-                  className="hover:text-primary transition-colors"
-                >
-                  <BsTwitterX size={24} />
-                </a>
-                <a
                   href="https://www.instagram.com/faiz_ans06"
                   target="_blank"
                   className="hover:text-primary transition-colors"
                 >
                   <GrInstagram size={25} />
+                </a>
+                <a
+                  href="https://x.com/faiz_ans09"
+                  target="_blank"
+                  className="hover:text-primary transition-colors"
+                >
+                  <BsTwitterX size={24} />
                 </a>
                 <a
                   href="https://wa.me/+919838492234"

@@ -70,12 +70,12 @@ export const Navbar = () => {
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col space-y-10">
             {navItems.map((item, key) => (
               <a
                 key={key}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-xl font-semibold text-foreground/80 hover:text-primary transition-colors duration-300 block px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

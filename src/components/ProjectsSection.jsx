@@ -5,7 +5,7 @@ const projects = [
     id: "1",
     title: "DailyScope",
     description:
-      "DailyScope is a modern news aggregator web app. It fetches and displays the latest headlines and news articles using the NewsAPI.",
+      "DailyScope is a modern news aggregator web app. It fetches and displays the latest headlines and news articles using the NewsAPI. It provides real-time news updates and browse top headlines by category or country.",
     image: "/projects/project1.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     // demoUrl: "https://github.com/faiz-ansari09/DailyScope",
@@ -15,7 +15,7 @@ const projects = [
     id: "2",
     title: "logiTracker",
     description:
-      "logiTracker is a full-stack web application which provides user authentication, watchlist management, and real-time tracking of cryptocurrency.",
+      "logiTracker is a full-stack web application where you can stay updated with the latest prices, trends, and market data for your favorite cryptocurrencies. It provides user authentication, watchlist management, and real-time tracking of cryptocurrency.",
     image: "/projects/project2.png",
     tags: [
       "React",
@@ -32,7 +32,7 @@ const projects = [
     id: "3",
     title: "myNoteSync",
     description:
-      "myNoteSync is a simple note synchronization tool designed to keep your notes consistent across multiple devices.",
+      "myNoteSync is a simple note synchronization tool designed to keep your notes consistent across multiple devices. This project aims to provide an easy-to-use solution for managing and syncing markdown-based notes.",
     image: "/projects/project3.png",
     tags: [
       "React",
@@ -49,7 +49,7 @@ const projects = [
     id: "4",
     title: "SumItUp",
     description:
-      "SumItUp is a simple, fast, and responsive React web application for analyzing and manipulating text.",
+      "SumItUp is a simple, fast, and responsive React web application for analyzing and manipulating text. It provides word and character counts, removes extra spaces, and includes support for light and dark modes.",
     image: "/projects/project4.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     // demoUrl: "https://sum-it-up-faiz.vercel.app",
@@ -59,7 +59,7 @@ const projects = [
     id: "5",
     title: "MedManage",
     description:
-      "A web-based Hospital Management System designed to streamline hospital operations such as patient registration, doctor management, and appointment scheduling.",
+      "A web-based Hospital Management System designed to streamline hospital operations such as patient registration, doctor management, and appointment scheduling. The system provides UI for patients, doctors and authentication, database interaction functionalities.",
     image: "/projects/project5.png",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     // demoUrl: "https://github.com/faiz-ansari09/MedManage-HMS",
@@ -69,7 +69,7 @@ const projects = [
     id: "6",
     title: "SMS-Spam Detection",
     description:
-      "This is a web application for the detection of SMS messages created using Streamlit which helps you determine if an SMS is spam or not using a machine learning model.",
+      "This is a web application for the detection of SMS messages created using Streamlit which helps you determine if an SMS is spam or not using a machine learning model. It provides User-friendly Interface.",
     image: "/projects/project6.png",
     tags: ["Python", "Streamlit", "scikit-learn", "NumPy", "SciPy"],
     // demoUrl: "https://sms-spam-detection-faiz.streamlit.app",
@@ -79,7 +79,7 @@ const projects = [
     id: "7",
     title: "Temperature Converter",
     description:
-      "This is a web-based temperature converter application that allows users to convert temperatures between Celsius and Fahrenheit.",
+      "This web-based temperature converter uses HTML, CSS, and JavaScript that allows users to convert temperatures between Celsius and Fahrenheit. The converter provides bidirectional temperature conversion between Celsius and Fahrenheit.",
     image: "/projects/project7.png",
     tags: ["HTML", "CSS", "JavaScript"],
     // demoUrl: "https://faiz-ansari09.github.io/Temperature_Converter",
@@ -89,7 +89,7 @@ const projects = [
     id: "8",
     title: "E-Comm",
     description:
-      "The project demonstrates a scalable architecture for online stores, featuring product listings, shopping cart functionality, and a responsive user interface.",
+      "E-Comm is a modern e-commerce web application landing page. This project demonstrates a scalable architecture for online stores, featuring product listings, shopping cart functionality, and a responsive user interface.",
     image: "/projects/project8.png",
     tags: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
     // demoUrl: "https://e-comm-faiz.vercel.app",

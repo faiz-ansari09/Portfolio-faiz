@@ -90,7 +90,7 @@ export const Navbar = () => {
       {/* mobile menu sliding from right */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-100 w-60 bg-background/95 backdrop-blur-md z-40 flex flex-col items-start px-6 pt-20",
+          "fixed top-0 right-0 h-100 w-54 bg-background/95 backdrop-blur-md z-40 flex flex-col items-start px-6 pt-20",
           "transition-transform duration-300 md:hidden",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
